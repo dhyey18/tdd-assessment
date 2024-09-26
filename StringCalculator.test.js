@@ -15,3 +15,13 @@ test('should return sum of two comma-separated numbers', () => {
   expect(add("1,2")).toBe(3);
 });
 
+// Test 4: Handle an Unknown Number of Numbers
+test('should return sum of multiple comma-separated numbers', () => {
+  expect(add("1,2,3,4")).toBe(10);
+});
+
+// Test 5: Handle New Lines as Delimiters
+test('should handle newlines between numbers', () => {
+  expect(add("1\n2,3")).toBe(6);
+});
+
