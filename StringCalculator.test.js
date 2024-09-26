@@ -25,3 +25,9 @@ test('should handle newlines between numbers', () => {
   expect(add("1\n2,3")).toBe(6);
 });
 
+// Test 6: Support Different Delimiters
+test('should support different delimiters', () => {
+  expect(add("//;\n1;2")).toBe(3);
+});
+
+
