@@ -35,3 +35,7 @@ test('should throw an exception for negative numbers', () => {
   expect(() => add("1,-2,3")).toThrow("Negative numbers not allowed: -2");
 });
 
+// Test 8: Show All Negative Numbers in Exception
+test('should list all negative numbers in exception', () => {
+  expect(() => add("1,-2,-3,4")).toThrow("Negative numbers not allowed: -2, -3");
+});
