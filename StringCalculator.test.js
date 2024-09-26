@@ -10,3 +10,8 @@ test('should return the number for a single number', () => {
   expect(add("1")).toBe(1);
 });
 
+// Test 3: Two Numbers Returns Their Sum
+test('should return sum of two comma-separated numbers', () => {
+  expect(add("1,2")).toBe(3);
+});
+

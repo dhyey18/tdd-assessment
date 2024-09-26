@@ -1,9 +1,9 @@
 
-// Implementation for Test 2
+// Implementation for Test 3
 function add(numbers) {
   if (!numbers) return 0;
-  return parseInt(numbers);
+  const numsArray = numbers.split(',').map(Number);
+  return numsArray.reduce((sum, num) => sum + num, 0);
 }
-
 
 module.exports = { add };
